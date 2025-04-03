@@ -1,0 +1,28 @@
+import java.util.*;
+public class StrongOrNot{
+
+	public static void main(String[]args) {
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		int copy=n;
+		int rem;
+		int fact=1;
+		int sum=0;
+		int i=1;
+		while(n>0) {
+			rem=n%10;
+		while(i<=rem) {
+			fact=fact*i;
+			i++;
+			sum=sum+fact;
+			n=n/10;
+			System.out.println(sum);
+		}
+		}
+		
+		if(sum==copy) {
+			System.out.println("Its strong");
+		}
+		else {
+			System.out.println("Its not strong");
+		}
