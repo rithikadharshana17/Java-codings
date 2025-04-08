@@ -1,0 +1,31 @@
+import java.util.*;
+public class UppercaseLowercase {
+       public static void main(String[]args){
+		Scanner sc=new Scanner(System.in);
+		char n=sc.next().charAt(0);
+		if((n>=65&&n<=90)||(n>=97&&n<=122)) {
+			System.out.println("alphabet");
+		}
+		if(n>=65&&n<=90) {                      //if(n>='A' && n<='Z')
+			System.out.println("upper case");
+		}
+		if(n=='a'||n=='e'||n=='i'||n=='o'||n=='u'||n=='A'||n=='E'||n=='I'||n=='O'||n=='U') {
+			System.out.println("vowels");
+		}
+		if(!(n=='a'||n=='e'||n=='i'||n=='o'||n=='u'||n=='A'||n=='E'||n=='I'||n=='O'||n=='U')) {
+			System.out.println("consonants");
+		}
+		
+		if(n>=97&&n<=122) {
+			System.out.println("lowercase");
+		}
+		else if(n>=48&&n<=57) {
+			System.out.println("numerical value");
+		}
+		else {
+			System.out.println("none");
+		}
+        }
+}
+	
+		
